@@ -1,0 +1,221 @@
+2019-01-21 21:32:20,596:INFO: Namespace(data='./data/', epoch=20, load_state='', mode='train', network='./models/SVM.py')
+2019-01-21 21:32:21,515:INFO: ===========training on epoch 1===========
+2019-01-21 21:32:21,729:INFO: 2019-01-21 21:32:21 epoch 1, step 1, loss: 3.854, global_step: 1601
+2019-01-21 21:32:21,849:INFO: 2019-01-21 21:32:21 epoch 1, step 200, loss: 4.696, global_step: 1800
+2019-01-21 21:32:21,958:INFO: 2019-01-21 21:32:21 epoch 1, step 400, loss: 6.245, global_step: 2000
+2019-01-21 21:32:22,061:INFO: 2019-01-21 21:32:21 epoch 1, step 600, loss: 3.647, global_step: 2200
+2019-01-21 21:32:22,163:INFO: 2019-01-21 21:32:21 epoch 1, step 800, loss: 2.617, global_step: 2400
+2019-01-21 21:32:22,267:INFO: 2019-01-21 21:32:21 epoch 1, step 1000, loss: 5.464, global_step: 2600
+2019-01-21 21:32:22,371:INFO: 2019-01-21 21:32:21 epoch 1, step 1200, loss: 6.241, global_step: 2800
+2019-01-21 21:32:22,475:INFO: 2019-01-21 21:32:21 epoch 1, step 1400, loss: 6.535, global_step: 3000
+2019-01-21 21:32:22,578:INFO: 2019-01-21 21:32:21 epoch 1, step 1600, loss: 4.743, global_step: 3200
+2019-01-21 21:32:22,704:INFO: ==> loss on train dataset
+2019-01-21 21:32:34,216:INFO: ===========training on epoch 2===========
+2019-01-21 21:32:35,046:INFO: 2019-01-21 21:32:34 epoch 2, step 1, loss: 3.376, global_step: 3201
+2019-01-21 21:32:35,185:INFO: 2019-01-21 21:32:34 epoch 2, step 200, loss: 3.867, global_step: 3400
+2019-01-21 21:32:35,300:INFO: 2019-01-21 21:32:34 epoch 2, step 400, loss: 4.433, global_step: 3600
+2019-01-21 21:32:35,412:INFO: 2019-01-21 21:32:34 epoch 2, step 600, loss: 3.493, global_step: 3800
+2019-01-21 21:32:35,522:INFO: 2019-01-21 21:32:34 epoch 2, step 800, loss: 5.477, global_step: 4000
+2019-01-21 21:32:35,627:INFO: 2019-01-21 21:32:34 epoch 2, step 1000, loss: 3.854, global_step: 4200
+2019-01-21 21:32:35,731:INFO: 2019-01-21 21:32:34 epoch 2, step 1200, loss: 3.847, global_step: 4400
+2019-01-21 21:32:35,834:INFO: 2019-01-21 21:32:34 epoch 2, step 1400, loss: 5.895, global_step: 4600
+2019-01-21 21:32:35,961:INFO: 2019-01-21 21:32:34 epoch 2, step 1600, loss: 5.891, global_step: 4800
+2019-01-21 21:32:37,084:INFO: ==> loss on train dataset
+2019-01-21 21:32:39,949:INFO: ===========training on epoch 3===========
+2019-01-21 21:32:39,996:INFO: 2019-01-21 21:32:39 epoch 3, step 1, loss: 3.45, global_step: 4801
+2019-01-21 21:32:40,102:INFO: 2019-01-21 21:32:39 epoch 3, step 200, loss: 4.249, global_step: 5000
+2019-01-21 21:32:40,210:INFO: 2019-01-21 21:32:39 epoch 3, step 400, loss: 6.595, global_step: 5200
+2019-01-21 21:32:40,320:INFO: 2019-01-21 21:32:39 epoch 3, step 600, loss: 5.211, global_step: 5400
+2019-01-21 21:32:40,431:INFO: 2019-01-21 21:32:39 epoch 3, step 800, loss: 3.154, global_step: 5600
+2019-01-21 21:32:40,540:INFO: 2019-01-21 21:32:39 epoch 3, step 1000, loss: 2.941, global_step: 5800
+2019-01-21 21:32:40,649:INFO: 2019-01-21 21:32:39 epoch 3, step 1200, loss: 3.755, global_step: 6000
+2019-01-21 21:32:40,761:INFO: 2019-01-21 21:32:39 epoch 3, step 1400, loss: 4.159, global_step: 6200
+2019-01-21 21:32:40,871:INFO: 2019-01-21 21:32:39 epoch 3, step 1600, loss: 3.09, global_step: 6400
+2019-01-21 21:32:41,333:INFO: ==> loss on train dataset
+2019-01-21 21:32:43,906:INFO: ===========training on epoch 4===========
+2019-01-21 21:32:43,950:INFO: 2019-01-21 21:32:43 epoch 4, step 1, loss: 8.204, global_step: 6401
+2019-01-21 21:32:44,063:INFO: 2019-01-21 21:32:43 epoch 4, step 200, loss: 3.912, global_step: 6600
+2019-01-21 21:32:44,170:INFO: 2019-01-21 21:32:43 epoch 4, step 400, loss: 6.485, global_step: 6800
+2019-01-21 21:32:44,278:INFO: 2019-01-21 21:32:43 epoch 4, step 600, loss: 4.98, global_step: 7000
+2019-01-21 21:32:44,385:INFO: 2019-01-21 21:32:43 epoch 4, step 800, loss: 3.098, global_step: 7200
+2019-01-21 21:32:44,493:INFO: 2019-01-21 21:32:43 epoch 4, step 1000, loss: 4.669, global_step: 7400
+2019-01-21 21:32:44,601:INFO: 2019-01-21 21:32:43 epoch 4, step 1200, loss: 6.058, global_step: 7600
+2019-01-21 21:32:44,708:INFO: 2019-01-21 21:32:43 epoch 4, step 1400, loss: 3.233, global_step: 7800
+2019-01-21 21:32:44,817:INFO: 2019-01-21 21:32:43 epoch 4, step 1600, loss: 3.376, global_step: 8000
+2019-01-21 21:32:45,451:INFO: ==> loss on train dataset
+2019-01-21 21:32:48,047:INFO: ===========training on epoch 5===========
+2019-01-21 21:32:48,097:INFO: 2019-01-21 21:32:48 epoch 5, step 1, loss: 6.488, global_step: 8001
+2019-01-21 21:32:48,209:INFO: 2019-01-21 21:32:48 epoch 5, step 200, loss: 7.018, global_step: 8200
+2019-01-21 21:32:48,319:INFO: 2019-01-21 21:32:48 epoch 5, step 400, loss: 5.971, global_step: 8400
+2019-01-21 21:32:48,428:INFO: 2019-01-21 21:32:48 epoch 5, step 600, loss: 9.803, global_step: 8600
+2019-01-21 21:32:48,536:INFO: 2019-01-21 21:32:48 epoch 5, step 800, loss: 2.846, global_step: 8800
+2019-01-21 21:32:48,643:INFO: 2019-01-21 21:32:48 epoch 5, step 1000, loss: 2.966, global_step: 9000
+2019-01-21 21:32:48,750:INFO: 2019-01-21 21:32:48 epoch 5, step 1200, loss: 4.785, global_step: 9200
+2019-01-21 21:32:48,859:INFO: 2019-01-21 21:32:48 epoch 5, step 1400, loss: 5.731, global_step: 9400
+2019-01-21 21:32:48,969:INFO: 2019-01-21 21:32:48 epoch 5, step 1600, loss: 3.209, global_step: 9600
+2019-01-21 21:32:49,203:INFO: ==> loss on train dataset
+2019-01-21 21:32:51,811:INFO: ===========training on epoch 6===========
+2019-01-21 21:32:51,854:INFO: 2019-01-21 21:32:51 epoch 6, step 1, loss: 4.307, global_step: 9601
+2019-01-21 21:32:51,962:INFO: 2019-01-21 21:32:51 epoch 6, step 200, loss: 3.543, global_step: 9800
+2019-01-21 21:32:52,068:INFO: 2019-01-21 21:32:51 epoch 6, step 400, loss: 4.05, global_step: 10000
+2019-01-21 21:32:52,175:INFO: 2019-01-21 21:32:51 epoch 6, step 600, loss: 4.044, global_step: 10200
+2019-01-21 21:32:52,282:INFO: 2019-01-21 21:32:51 epoch 6, step 800, loss: 4.393, global_step: 10400
+2019-01-21 21:32:52,388:INFO: 2019-01-21 21:32:51 epoch 6, step 1000, loss: 5.381, global_step: 10600
+2019-01-21 21:32:52,499:INFO: 2019-01-21 21:32:51 epoch 6, step 1200, loss: 4.056, global_step: 10800
+2019-01-21 21:32:52,607:INFO: 2019-01-21 21:32:51 epoch 6, step 1400, loss: 4.889, global_step: 11000
+2019-01-21 21:32:52,713:INFO: 2019-01-21 21:32:51 epoch 6, step 1600, loss: 5.148, global_step: 11200
+2019-01-21 21:32:53,034:INFO: ==> loss on train dataset
+2019-01-21 21:32:55,542:INFO: ===========training on epoch 7===========
+2019-01-21 21:32:55,585:INFO: 2019-01-21 21:32:55 epoch 7, step 1, loss: 8.0, global_step: 11201
+2019-01-21 21:32:55,697:INFO: 2019-01-21 21:32:55 epoch 7, step 200, loss: 4.995, global_step: 11400
+2019-01-21 21:32:55,804:INFO: 2019-01-21 21:32:55 epoch 7, step 400, loss: 3.808, global_step: 11600
+2019-01-21 21:32:55,911:INFO: 2019-01-21 21:32:55 epoch 7, step 600, loss: 4.853, global_step: 11800
+2019-01-21 21:32:56,018:INFO: 2019-01-21 21:32:55 epoch 7, step 800, loss: 3.801, global_step: 12000
+2019-01-21 21:32:56,125:INFO: 2019-01-21 21:32:55 epoch 7, step 1000, loss: 2.748, global_step: 12200
+2019-01-21 21:32:56,236:INFO: 2019-01-21 21:32:55 epoch 7, step 1200, loss: 4.733, global_step: 12400
+2019-01-21 21:32:56,345:INFO: 2019-01-21 21:32:55 epoch 7, step 1400, loss: 5.718, global_step: 12600
+2019-01-21 21:32:56,452:INFO: 2019-01-21 21:32:55 epoch 7, step 1600, loss: 6.193, global_step: 12800
+2019-01-21 21:32:56,669:INFO: ==> loss on train dataset
+2019-01-21 21:32:59,155:INFO: ===========training on epoch 8===========
+2019-01-21 21:32:59,200:INFO: 2019-01-21 21:32:59 epoch 8, step 1, loss: 4.249, global_step: 12801
+2019-01-21 21:32:59,312:INFO: 2019-01-21 21:32:59 epoch 8, step 200, loss: 3.975, global_step: 13000
+2019-01-21 21:32:59,421:INFO: 2019-01-21 21:32:59 epoch 8, step 400, loss: 7.28, global_step: 13200
+2019-01-21 21:32:59,531:INFO: 2019-01-21 21:32:59 epoch 8, step 600, loss: 4.342, global_step: 13400
+2019-01-21 21:32:59,641:INFO: 2019-01-21 21:32:59 epoch 8, step 800, loss: 4.307, global_step: 13600
+2019-01-21 21:32:59,751:INFO: 2019-01-21 21:32:59 epoch 8, step 1000, loss: 4.472, global_step: 13800
+2019-01-21 21:32:59,858:INFO: 2019-01-21 21:32:59 epoch 8, step 1200, loss: 5.381, global_step: 14000
+2019-01-21 21:32:59,968:INFO: 2019-01-21 21:32:59 epoch 8, step 1400, loss: 6.461, global_step: 14200
+2019-01-21 21:33:00,078:INFO: 2019-01-21 21:32:59 epoch 8, step 1600, loss: 4.093, global_step: 14400
+2019-01-21 21:33:00,334:INFO: ==> loss on train dataset
+2019-01-21 21:33:02,870:INFO: ===========training on epoch 9===========
+2019-01-21 21:33:02,913:INFO: 2019-01-21 21:33:02 epoch 9, step 1, loss: 4.171, global_step: 14401
+2019-01-21 21:33:03,021:INFO: 2019-01-21 21:33:02 epoch 9, step 200, loss: 4.858, global_step: 14600
+2019-01-21 21:33:03,129:INFO: 2019-01-21 21:33:02 epoch 9, step 400, loss: 3.924, global_step: 14800
+2019-01-21 21:33:03,237:INFO: 2019-01-21 21:33:02 epoch 9, step 600, loss: 6.496, global_step: 15000
+2019-01-21 21:33:03,344:INFO: 2019-01-21 21:33:02 epoch 9, step 800, loss: 4.382, global_step: 15200
+2019-01-21 21:33:03,450:INFO: 2019-01-21 21:33:02 epoch 9, step 1000, loss: 5.287, global_step: 15400
+2019-01-21 21:33:03,557:INFO: 2019-01-21 21:33:02 epoch 9, step 1200, loss: 5.079, global_step: 15600
+2019-01-21 21:33:03,665:INFO: 2019-01-21 21:33:02 epoch 9, step 1400, loss: 7.211, global_step: 15800
+2019-01-21 21:33:03,774:INFO: 2019-01-21 21:33:02 epoch 9, step 1600, loss: 3.647, global_step: 16000
+2019-01-21 21:33:03,921:INFO: ==> loss on train dataset
+2019-01-21 21:33:06,551:INFO: ===========training on epoch 10===========
+2019-01-21 21:33:06,598:INFO: 2019-01-21 21:33:06 epoch 10, step 1, loss: 4.801, global_step: 16001
+2019-01-21 21:33:06,708:INFO: 2019-01-21 21:33:06 epoch 10, step 200, loss: 4.853, global_step: 16200
+2019-01-21 21:33:06,821:INFO: 2019-01-21 21:33:06 epoch 10, step 400, loss: 3.248, global_step: 16400
+2019-01-21 21:33:06,939:INFO: 2019-01-21 21:33:06 epoch 10, step 600, loss: 5.514, global_step: 16600
+2019-01-21 21:33:07,053:INFO: 2019-01-21 21:33:06 epoch 10, step 800, loss: 4.135, global_step: 16800
+2019-01-21 21:33:07,165:INFO: 2019-01-21 21:33:06 epoch 10, step 1000, loss: 5.287, global_step: 17000
+2019-01-21 21:33:07,279:INFO: 2019-01-21 21:33:06 epoch 10, step 1200, loss: 2.828, global_step: 17200
+2019-01-21 21:33:07,389:INFO: 2019-01-21 21:33:06 epoch 10, step 1400, loss: 4.433, global_step: 17400
+2019-01-21 21:33:07,499:INFO: 2019-01-21 21:33:06 epoch 10, step 1600, loss: 6.14, global_step: 17600
+2019-01-21 21:33:07,646:INFO: ==> loss on train dataset
+2019-01-21 21:33:10,197:INFO: ===========training on epoch 11===========
+2019-01-21 21:33:10,242:INFO: 2019-01-21 21:33:10 epoch 11, step 1, loss: 4.006, global_step: 17601
+2019-01-21 21:33:10,350:INFO: 2019-01-21 21:33:10 epoch 11, step 200, loss: 7.372, global_step: 17800
+2019-01-21 21:33:10,461:INFO: 2019-01-21 21:33:10 epoch 11, step 400, loss: 3.899, global_step: 18000
+2019-01-21 21:33:10,570:INFO: 2019-01-21 21:33:10 epoch 11, step 600, loss: 5.491, global_step: 18200
+2019-01-21 21:33:10,679:INFO: 2019-01-21 21:33:10 epoch 11, step 800, loss: 3.612, global_step: 18400
+2019-01-21 21:33:10,786:INFO: 2019-01-21 21:33:10 epoch 11, step 1000, loss: 8.225, global_step: 18600
+2019-01-21 21:33:10,893:INFO: 2019-01-21 21:33:10 epoch 11, step 1200, loss: 3.599, global_step: 18800
+2019-01-21 21:33:11,005:INFO: 2019-01-21 21:33:10 epoch 11, step 1400, loss: 6.16, global_step: 19000
+2019-01-21 21:33:11,116:INFO: 2019-01-21 21:33:10 epoch 11, step 1600, loss: 9.019, global_step: 19200
+2019-01-21 21:33:11,265:INFO: ==> loss on train dataset
+2019-01-21 21:33:13,839:INFO: ===========training on epoch 12===========
+2019-01-21 21:33:13,887:INFO: 2019-01-21 21:33:13 epoch 12, step 1, loss: 3.442, global_step: 19201
+2019-01-21 21:33:13,998:INFO: 2019-01-21 21:33:13 epoch 12, step 200, loss: 3.701, global_step: 19400
+2019-01-21 21:33:14,106:INFO: 2019-01-21 21:33:13 epoch 12, step 400, loss: 4.455, global_step: 19600
+2019-01-21 21:33:14,218:INFO: 2019-01-21 21:33:13 epoch 12, step 600, loss: 2.48, global_step: 19800
+2019-01-21 21:33:14,330:INFO: 2019-01-21 21:33:13 epoch 12, step 800, loss: 2.941, global_step: 20000
+2019-01-21 21:33:14,441:INFO: 2019-01-21 21:33:13 epoch 12, step 1000, loss: 6.395, global_step: 20200
+2019-01-21 21:33:14,551:INFO: 2019-01-21 21:33:13 epoch 12, step 1200, loss: 5.143, global_step: 20400
+2019-01-21 21:33:14,664:INFO: 2019-01-21 21:33:13 epoch 12, step 1400, loss: 3.841, global_step: 20600
+2019-01-21 21:33:14,771:INFO: 2019-01-21 21:33:13 epoch 12, step 1600, loss: 3.376, global_step: 20800
+2019-01-21 21:33:14,958:INFO: ==> loss on train dataset
+2019-01-21 21:33:17,515:INFO: ===========training on epoch 13===========
+2019-01-21 21:33:17,556:INFO: 2019-01-21 21:33:17 epoch 13, step 1, loss: 4.909, global_step: 20801
+2019-01-21 21:33:17,665:INFO: 2019-01-21 21:33:17 epoch 13, step 200, loss: 6.697, global_step: 21000
+2019-01-21 21:33:17,773:INFO: 2019-01-21 21:33:17 epoch 13, step 400, loss: 7.138, global_step: 21200
+2019-01-21 21:33:17,880:INFO: 2019-01-21 21:33:17 epoch 13, step 600, loss: 3.271, global_step: 21400
+2019-01-21 21:33:17,986:INFO: 2019-01-21 21:33:17 epoch 13, step 800, loss: 5.413, global_step: 21600
+2019-01-21 21:33:18,094:INFO: 2019-01-21 21:33:17 epoch 13, step 1000, loss: 4.422, global_step: 21800
+2019-01-21 21:33:18,200:INFO: 2019-01-21 21:33:17 epoch 13, step 1200, loss: 5.094, global_step: 22000
+2019-01-21 21:33:18,306:INFO: 2019-01-21 21:33:17 epoch 13, step 1400, loss: 2.646, global_step: 22200
+2019-01-21 21:33:18,412:INFO: 2019-01-21 21:33:17 epoch 13, step 1600, loss: 3.507, global_step: 22400
+2019-01-21 21:33:18,603:INFO: ==> loss on train dataset
+2019-01-21 21:33:21,116:INFO: ===========training on epoch 14===========
+2019-01-21 21:33:21,161:INFO: 2019-01-21 21:33:21 epoch 14, step 1, loss: 5.343, global_step: 22401
+2019-01-21 21:33:21,272:INFO: 2019-01-21 21:33:21 epoch 14, step 200, loss: 5.865, global_step: 22600
+2019-01-21 21:33:21,381:INFO: 2019-01-21 21:33:21 epoch 14, step 400, loss: 3.886, global_step: 22800
+2019-01-21 21:33:21,489:INFO: 2019-01-21 21:33:21 epoch 14, step 600, loss: 4.539, global_step: 23000
+2019-01-21 21:33:21,598:INFO: 2019-01-21 21:33:21 epoch 14, step 800, loss: 5.119, global_step: 23200
+2019-01-21 21:33:21,711:INFO: 2019-01-21 21:33:21 epoch 14, step 1000, loss: 3.528, global_step: 23400
+2019-01-21 21:33:21,818:INFO: 2019-01-21 21:33:21 epoch 14, step 1200, loss: 4.129, global_step: 23600
+2019-01-21 21:33:21,925:INFO: 2019-01-21 21:33:21 epoch 14, step 1400, loss: 5.459, global_step: 23800
+2019-01-21 21:33:22,033:INFO: 2019-01-21 21:33:21 epoch 14, step 1600, loss: 5.413, global_step: 24000
+2019-01-21 21:33:22,292:INFO: ==> loss on train dataset
+2019-01-21 21:33:24,835:INFO: ===========training on epoch 15===========
+2019-01-21 21:33:24,878:INFO: 2019-01-21 21:33:24 epoch 15, step 1, loss: 3.033, global_step: 24001
+2019-01-21 21:33:24,988:INFO: 2019-01-21 21:33:24 epoch 15, step 200, loss: 5.244, global_step: 24200
+2019-01-21 21:33:25,094:INFO: 2019-01-21 21:33:24 epoch 15, step 400, loss: 5.541, global_step: 24400
+2019-01-21 21:33:25,201:INFO: 2019-01-21 21:33:24 epoch 15, step 600, loss: 3.435, global_step: 24600
+2019-01-21 21:33:25,314:INFO: 2019-01-21 21:33:24 epoch 15, step 800, loss: 5.666, global_step: 24800
+2019-01-21 21:33:25,425:INFO: 2019-01-21 21:33:24 epoch 15, step 1000, loss: 4.68, global_step: 25000
+2019-01-21 21:33:25,531:INFO: 2019-01-21 21:33:24 epoch 15, step 1200, loss: 6.867, global_step: 25200
+2019-01-21 21:33:25,637:INFO: 2019-01-21 21:33:24 epoch 15, step 1400, loss: 7.085, global_step: 25400
+2019-01-21 21:33:25,743:INFO: 2019-01-21 21:33:24 epoch 15, step 1600, loss: 4.087, global_step: 25600
+2019-01-21 21:33:25,896:INFO: ==> loss on train dataset
+2019-01-21 21:33:28,393:INFO: ===========training on epoch 16===========
+2019-01-21 21:33:28,435:INFO: 2019-01-21 21:33:28 epoch 16, step 1, loss: 7.138, global_step: 25601
+2019-01-21 21:33:28,547:INFO: 2019-01-21 21:33:28 epoch 16, step 200, loss: 5.089, global_step: 25800
+2019-01-21 21:33:28,654:INFO: 2019-01-21 21:33:28 epoch 16, step 400, loss: 4.78, global_step: 26000
+2019-01-21 21:33:28,762:INFO: 2019-01-21 21:33:28 epoch 16, step 600, loss: 5.244, global_step: 26200
+2019-01-21 21:33:28,869:INFO: 2019-01-21 21:33:28 epoch 16, step 800, loss: 3.017, global_step: 26400
+2019-01-21 21:33:28,976:INFO: 2019-01-21 21:33:28 epoch 16, step 1000, loss: 5.367, global_step: 26600
+2019-01-21 21:33:29,083:INFO: 2019-01-21 21:33:28 epoch 16, step 1200, loss: 4.96, global_step: 26800
+2019-01-21 21:33:29,192:INFO: 2019-01-21 21:33:28 epoch 16, step 1400, loss: 5.32, global_step: 27000
+2019-01-21 21:33:29,298:INFO: 2019-01-21 21:33:28 epoch 16, step 1600, loss: 3.661, global_step: 27200
+2019-01-21 21:33:29,437:INFO: ==> loss on train dataset
+2019-01-21 21:33:31,978:INFO: ===========training on epoch 17===========
+2019-01-21 21:33:32,020:INFO: 2019-01-21 21:33:31 epoch 17, step 1, loss: 3.24, global_step: 27201
+2019-01-21 21:33:32,130:INFO: 2019-01-21 21:33:31 epoch 17, step 200, loss: 2.588, global_step: 27400
+2019-01-21 21:33:32,237:INFO: 2019-01-21 21:33:31 epoch 17, step 400, loss: 3.912, global_step: 27600
+2019-01-21 21:33:32,343:INFO: 2019-01-21 21:33:31 epoch 17, step 600, loss: 4.811, global_step: 27800
+2019-01-21 21:33:32,450:INFO: 2019-01-21 21:33:31 epoch 17, step 800, loss: 5.454, global_step: 28000
+2019-01-21 21:33:32,559:INFO: 2019-01-21 21:33:31 epoch 17, step 1000, loss: 4.733, global_step: 28200
+2019-01-21 21:33:32,665:INFO: 2019-01-21 21:33:31 epoch 17, step 1200, loss: 4.96, global_step: 28400
+2019-01-21 21:33:32,772:INFO: 2019-01-21 21:33:31 epoch 17, step 1400, loss: 5.282, global_step: 28600
+2019-01-21 21:33:32,879:INFO: 2019-01-21 21:33:31 epoch 17, step 1600, loss: 3.122, global_step: 28800
+2019-01-21 21:33:33,028:INFO: ==> loss on train dataset
+2019-01-21 21:33:35,547:INFO: ===========training on epoch 18===========
+2019-01-21 21:33:35,591:INFO: 2019-01-21 21:33:35 epoch 18, step 1, loss: 2.48, global_step: 28801
+2019-01-21 21:33:35,700:INFO: 2019-01-21 21:33:35 epoch 18, step 200, loss: 2.408, global_step: 29000
+2019-01-21 21:33:35,808:INFO: 2019-01-21 21:33:35 epoch 18, step 400, loss: 5.07, global_step: 29200
+2019-01-21 21:33:35,916:INFO: 2019-01-21 21:33:35 epoch 18, step 600, loss: 4.189, global_step: 29400
+2019-01-21 21:33:36,024:INFO: 2019-01-21 21:33:35 epoch 18, step 800, loss: 6.273, global_step: 29600
+2019-01-21 21:33:36,131:INFO: 2019-01-21 21:33:35 epoch 18, step 1000, loss: 4.539, global_step: 29800
+2019-01-21 21:33:36,239:INFO: 2019-01-21 21:33:35 epoch 18, step 1200, loss: 4.399, global_step: 30000
+2019-01-21 21:33:36,346:INFO: 2019-01-21 21:33:35 epoch 18, step 1400, loss: 3.162, global_step: 30200
+2019-01-21 21:33:36,452:INFO: 2019-01-21 21:33:35 epoch 18, step 1600, loss: 4.099, global_step: 30400
+2019-01-21 21:33:36,650:INFO: ==> loss on train dataset
+2019-01-21 21:33:39,213:INFO: ===========training on epoch 19===========
+2019-01-21 21:33:39,255:INFO: 2019-01-21 21:33:39 epoch 19, step 1, loss: 6.932, global_step: 30401
+2019-01-21 21:33:39,362:INFO: 2019-01-21 21:33:39 epoch 19, step 200, loss: 4.696, global_step: 30600
+2019-01-21 21:33:39,468:INFO: 2019-01-21 21:33:39 epoch 19, step 400, loss: 4.615, global_step: 30800
+2019-01-21 21:33:39,574:INFO: 2019-01-21 21:33:39 epoch 19, step 600, loss: 3.748, global_step: 31000
+2019-01-21 21:33:39,682:INFO: 2019-01-21 21:33:39 epoch 19, step 800, loss: 4.213, global_step: 31200
+2019-01-21 21:33:39,793:INFO: 2019-01-21 21:33:39 epoch 19, step 1000, loss: 3.722, global_step: 31400
+2019-01-21 21:33:39,901:INFO: 2019-01-21 21:33:39 epoch 19, step 1200, loss: 4.33, global_step: 31600
+2019-01-21 21:33:40,011:INFO: 2019-01-21 21:33:39 epoch 19, step 1400, loss: 3.008, global_step: 31800
+2019-01-21 21:33:40,117:INFO: 2019-01-21 21:33:39 epoch 19, step 1600, loss: 3.209, global_step: 32000
+2019-01-21 21:33:40,327:INFO: ==> loss on train dataset
+2019-01-21 21:33:42,851:INFO: ===========training on epoch 20===========
+2019-01-21 21:33:42,894:INFO: 2019-01-21 21:33:42 epoch 20, step 1, loss: 4.336, global_step: 32001
+2019-01-21 21:33:43,004:INFO: 2019-01-21 21:33:42 epoch 20, step 200, loss: 6.917, global_step: 32200
+2019-01-21 21:33:43,112:INFO: 2019-01-21 21:33:42 epoch 20, step 400, loss: 5.109, global_step: 32400
+2019-01-21 21:33:43,220:INFO: 2019-01-21 21:33:42 epoch 20, step 600, loss: 4.599, global_step: 32600
+2019-01-21 21:33:43,329:INFO: 2019-01-21 21:33:42 epoch 20, step 800, loss: 2.51, global_step: 32800
+2019-01-21 21:33:43,441:INFO: 2019-01-21 21:33:42 epoch 20, step 1000, loss: 3.256, global_step: 33000
+2019-01-21 21:33:43,547:INFO: 2019-01-21 21:33:42 epoch 20, step 1200, loss: 7.694, global_step: 33200
+2019-01-21 21:33:43,655:INFO: 2019-01-21 21:33:42 epoch 20, step 1400, loss: 4.427, global_step: 33400
+2019-01-21 21:33:43,761:INFO: 2019-01-21 21:33:42 epoch 20, step 1600, loss: 4.832, global_step: 33600
+2019-01-21 21:33:43,899:INFO: ==> loss on train dataset

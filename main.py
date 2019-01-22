@@ -28,7 +28,7 @@ args = parser.parse_args()
 assert args.network is not None
 print("==> using model {}".format(args.network))
 model_module = imp.load_source(os.path.basename(args.network), args.network)
-model = model_module.Network(args, num_classes = 1, input_dim = 32)
+model = model_module.Network(args, num_classes = 1, input_dim = 111)
 model.final_name = model.say_name()
 
 '''
@@ -46,6 +46,7 @@ summary_path = os.path.join(output_path, "summaries")
 log_path = os.path.join(result_path, "log.txt")
 paths['model_path'] = model_path
 paths['summary_path'] = summary_path
+model.init_model_save_path(paths)
 if not os.path.exists(result_path): 
     os.makedirs(result_path)
     pass
@@ -76,12 +77,11 @@ print("==>At model epoch",global_epoch)
 if args.mode == 'train':
 	###读取训练和验证数据
 	train_data_path = os.path.join(args.data,'train.csv')
-	val_data_path = os.path.join(args.data,'test.csv')
-	print("training mode")
-	exit()
-	train_data = load_data(train_data_path)
-	val_data = load_data(train_data_path)
-
+	# val_data_path = os.path.join(args.data,'test.csv')
+	train_data = load_data(train_data_path,mode='train')
+	# val_data = load_data(val_data_path,mode='test')
+	# print("training mode")
+	# exit()
 	saver = tf.train.Saver(tf.global_variables())
 	with tf.Session() as sess:
 		#如果模型有checkpoint,载入
@@ -93,6 +93,15 @@ if args.mode == 'train':
 		#逐个epoch进行训练
 		for epoch in range(args.epoch):
 			#分
+			logger.info('===========training on epoch {}==========='.format(epoch+global_epoch+1))
+			model.train_epoch(sess, train_data, epoch+global_epoch+1, saver, logger)
+			logger.info('==> loss on train dataset')
+			predictions,labels,losses = model.predict_one_epoch(sess, train_data)  ##计算验证集的loss
+			print("loss on training dataset:",losses)
+			# val_result = print_metrics_binary(labels, predictions,verbose=1)
+			# val_result['losses'] = losses
+			# logger.info(val_result)
+			
 			pass
 		pass
 	pass
