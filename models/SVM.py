@@ -6,6 +6,7 @@
 # @Version : $Id$
 
 import os,time,sys
+import numpy as np
 import tensorflow as tf
 sys.path.append("..")
 from utils import get_next_batch
@@ -83,7 +84,7 @@ class Network(object):
 
 		batches = get_next_batch(train_data, self.batch_size, shuffle=self.shuffle)
 		for step, batchsample in enumerate(batches):
-			step_num = epoch * num_batches + step + 1
+			step_num = (epoch-1) * num_batches + step + 1
 			feed_dict, _ = self.get_feed_dict(batchsample,self.lr,self.dropout_pl)#整理喂入神经网络的字典
 			_, loss_train = sess.run([self.train_op, self.loss],feed_dict=feed_dict)
 			if step + 1 == 1 or (step + 1) % 200 == 0 or step + 1 == num_batches:

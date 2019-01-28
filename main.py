@@ -77,11 +77,12 @@ print("==>At model epoch",global_epoch)
 if args.mode == 'train':
 	###读取训练和验证数据
 	train_data_path = os.path.join(args.data,'train.csv')
-	# val_data_path = os.path.join(args.data,'test.csv')
+	val_data_path = os.path.join(args.data,'test.csv')
 	train_data = load_data(train_data_path,mode='train')
-	# val_data = load_data(val_data_path,mode='test')
-	# print("training mode")
+	train_part = (train_data[0][8000:],train_data[1][8000:])
+	val_part = (train_data[0][0:8000],train_data[1][0:8000])
 	# exit()
+	print("training mode")
 	saver = tf.train.Saver(tf.global_variables())
 	with tf.Session() as sess:
 		#如果模型有checkpoint,载入
@@ -94,10 +95,14 @@ if args.mode == 'train':
 		for epoch in range(args.epoch):
 			#分
 			logger.info('===========training on epoch {}==========='.format(epoch+global_epoch+1))
-			model.train_epoch(sess, train_data, epoch+global_epoch+1, saver, logger)
-			logger.info('==> loss on train dataset')
-			predictions,labels,losses = model.predict_one_epoch(sess, train_data)  ##计算验证集的loss
-			print("loss on training dataset:",losses)
+			model.train_epoch(sess, train_part, epoch+global_epoch+1, saver, logger)
+			# logger.info('==> loss on train dataset')
+			predictions,labels,losses = model.predict_one_epoch(sess, train_part)  ##计算验证集的loss
+			logger.info('==> loss on train dataset%f'%losses)
+			# print("loss on training dataset:",losses)
+			predictions,labels,losses = model.predict_one_epoch(sess, val_part)  ##计算验证集的loss
+			logger.info('==> loss on test dataset%f'%losses)
+			# logger("loss on test dataset:",losses)
 			# val_result = print_metrics_binary(labels, predictions,verbose=1)
 			# val_result['losses'] = losses
 			# logger.info(val_result)
@@ -110,7 +115,7 @@ elif args.mode == 'test':
 	读取测试数据
 	'''
 	test_data_path = os.path.join(args.data,'test.csv')
-	test_data = load_data(test_data_path)
+	test_data = load_data(test_data_path,mode='test')
 	if ckpt_file ==None:
 		raise Exception("No checkpoint model was found")
 		pass
