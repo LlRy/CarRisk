@@ -1,0 +1,6 @@
+model_checkpoint_path: "mymodel-400"
+all_model_checkpoint_paths: "mymodel-396"
+all_model_checkpoint_paths: "mymodel-397"
+all_model_checkpoint_paths: "mymodel-398"
+all_model_checkpoint_paths: "mymodel-399"
+all_model_checkpoint_paths: "mymodel-400"

@@ -5,7 +5,7 @@
 # @Link    : ${link}
 # @Version : $Id$
 
-import os,sys,argparse,imp
+import os,sys,argparse,imp,re
 import numpy as np
 import tensorflow as tf
 from utils import load_data
@@ -16,7 +16,7 @@ parser = argparse.ArgumentParser(description='LSTM-based deep learning methods f
 parser.add_argument('--network', type=str, default="./models/SVM.py", help='model structure')
 parser.add_argument('--data', type=str, default='./data/', 
                     help='train data source')
-parser.add_argument('--epoch',type=int,default=20,help='number of epochs')
+parser.add_argument('--epoch',type=int,default=100,help='number of epochs')
 parser.add_argument('--mode',type=str,default="train",help="train/test")
 parser.add_argument('--load_state',type=str,default='',help='model checkpoint path')
 args = parser.parse_args()
@@ -92,6 +92,7 @@ if args.mode == 'train':
 		else: #如果存在checkpoint，先加载
 			saver.restore(sess, ckpt_file)
 		#逐个epoch进行训练
+		model.addSummary(sess)
 		for epoch in range(args.epoch):
 			#分
 			logger.info('===========training on epoch {}==========='.format(epoch+global_epoch+1))
@@ -106,7 +107,6 @@ if args.mode == 'train':
 			# val_result = print_metrics_binary(labels, predictions,verbose=1)
 			# val_result['losses'] = losses
 			# logger.info(val_result)
-			
 			pass
 		pass
 	pass

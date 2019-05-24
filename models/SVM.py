@@ -19,7 +19,8 @@ class Network(object):
 		self.task = 'regression'
 		self.batch_size = 20
 		self.dropout_pl = 0.5
-		self.lr = 0.0001
+		self.lr = 0.01
+		self.clip_grad = 5.0
 		self.shuffle = False
 		self.output_dim = 1
 		self.network_op()
@@ -29,6 +30,14 @@ class Network(object):
 		self.model_path = os.path.join(paths['model_path'], "mymodel")  #给模型加前缀
 		self.summary_path = paths['summary_path']
 		pass
+
+	def addSummary(self, sess):
+		"""
+		:param sess:
+		:return:
+		"""
+		self.merged = tf.summary.merge_all()
+		self.file_writer = tf.summary.FileWriter(self.summary_path, sess.graph)
 
 	def network_op(self):
 		self.inputX = tf.placeholder(tf.float32, shape=[None, self.input_dim], name="inputX")
@@ -45,9 +54,10 @@ class Network(object):
                                 initializer=tf.zeros_initializer(),
                                 dtype=tf.float32,
                                 trainable=True)
-			wx_plus_b1=tf.matmul(self.inputX,W1)+b1
-			middle = tf.nn.softmax(wx_plus_b1)  ##中间层激活
-			middle = tf.nn.dropout(middle,self.dropout_pl)
+			wx_plus_b1=tf.matmul(self.inputX, W1)+b1
+			middle = wx_plus_b1
+			# middle = tf.nn.softmax(wx_plus_b1)  ##中间层激活
+			# middle = tf.nn.dropout(middle,self.dropout_pl)
 
 		with tf.variable_scope("layer2"):
 			W2 = tf.get_variable(name="W2",
@@ -61,12 +71,26 @@ class Network(object):
                                 dtype=tf.float32,
                                 trainable=True)
 			wx_plus_b2=tf.matmul(middle,W2)+b2
-			self.predict=tf.nn.softmax(wx_plus_b2)
+
+		# self.logits = tf.reshape(pred, [-1])
+		self.predict = tf.reshape(wx_plus_b2,[-1])
+		self.predict_score_ = tf.sigmoid(self.predict)
+		# self.predict=tf.nn.softmax(wx_plus_b2)
 
 		#损失函数选用RMSE
-		self.loss=tf.sqrt(tf.reduce_mean(tf.square(self.inputY-self.predict)))
-		#优化函数选取梯度下降法
-		self.train_op = tf.train.AdamOptimizer(self.lr,0.9).minimize(self.loss)
+		# self.loss=tf.sqrt(tf.reduce_mean(tf.square(self.inputY-self.predict)))
+		self.loss = tf.sqrt(tf.reduce_mean(tf.square(tf.subtract(self.inputY, self.predict))))
+
+		# self.loss = tf.nn.sigmoid_cross_entropy_with_logits(labels=self.inputY,logits=wx_plus_b2)
+		# h = (self.inputY * tf.log(tf.sigmoid(wx_plus_b2)) + (1-self.inputY)* tf.log(1-tf.sigmoid(wx_plus_b2))) * -1
+		# self.loss = tf.reduce_mean(h)
+		self.global_step = tf.Variable(0, name="global_step", trainable=False)
+		optim = tf.train.AdamOptimizer(learning_rate=self.lr, beta1=0.9)
+		grads_and_vars = optim.compute_gradients(self.loss)
+		grads_and_vars_clip = [[tf.clip_by_value(g, -self.clip_grad, self.clip_grad), v] for g, v in grads_and_vars]
+		self.train_op = optim.apply_gradients(grads_and_vars_clip, global_step=self.global_step)
+		# self.train_op = tf.train.GradientDescentOptimizer(self.lr).minimize(self.loss)
+		# AdamOptimizer(self.lr,0.9).minimize(self.loss)
 		# GradientDescentOptimizer(self.lr).minimize(self.loss)
 		pass
 
@@ -94,12 +118,13 @@ class Network(object):
 			                                                                    step + 1,
 			                                                                    loss_train, step_num))
 
+			# self.file_writer.add_summary(summary, step_num)
 		saver.save(sess, self.model_path, global_step = epoch)
 		pass
 
 	def predict_one_epoch(self, sess, validate):
 		feed_dict = {self.inputX: validate[0],self.inputY: validate[1]}
-		predictions, losses = sess.run([self.predict, self.loss], feed_dict=feed_dict)
+		predictions, losses = sess.run([self.predict_score_, self.loss], feed_dict=feed_dict)
 		return predictions, validate[1], losses
 		pass
 
@@ -111,15 +136,6 @@ class Network(object):
 			pass
 		feed_dict = {self.inputX: rawx,
 		             self.inputY: rawy}
-		# if lr is not None:
-		# 	feed_dict[self.lr] = lr
-		# else:
-		# 	feed_dict[self.lr] = self.lr
-		# if dropout is not None:
-		# 	feed_dict[self.dropout_pl] = dropout
-		# else:
-		# 	feed_dict[self.dropout_pl] = self.dropout_pl
-
 		return feed_dict, rawy
 		pass
 
